@@ -40,3 +40,5 @@ module.exports=app
 
 
 /** we are working with the database which are in the cloud mongodb atlas*/
+//CI -true in yaml file make the watch mode disable in testing the code
+//in Github action 
