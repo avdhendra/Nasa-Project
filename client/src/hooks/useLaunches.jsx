@@ -27,7 +27,7 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
     const mission = data.get("mission-name");
     const rocket = data.get("rocket-name");
     const target = data.get("planets-selector");
-    const response = await httpSubmitLaunch({
+     await httpSubmitLaunch({
       launchDate,
       mission,
       rocket,
@@ -48,7 +48,7 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
   }, [getLaunches, onSuccessSound, onFailureSound]);
 
   const abortLaunch = useCallback(async (id) => {
-    const response = await httpAbortLaunch(id);
+     await httpAbortLaunch(id);
 
     // TODO: Set success based on response.
     const success = false;
